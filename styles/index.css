@@ -34,3 +34,8 @@ i {
 .no-style-list {
   list-style-type: none;
 }
+
+.more-examples{
+  display: none;
+}
+
