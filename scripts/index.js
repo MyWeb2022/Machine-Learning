@@ -1,5 +1,7 @@
 var mode = document.querySelector("#button-mode");
 
+var more_examples = document.querySelector(".button-more-examples");
+
 mode.addEventListener("click", function (){
 
   var card = document.querySelectorAll(".card");
@@ -46,3 +48,13 @@ function changeNavBar() {
   nav_bar.classList.toggle("bg-dark");
   nav_bar.classList.toggle("bg-light");
 }
+
+more_examples.addEventListener("click", function() {
+  var more_examples_tab = document.querySelector(".more-examples");
+  if (counter%2 === 0){
+    more_examples_tab.style.display = "block";
+  }else{
+    more_examples_tab.style.display = "none";
+  }
+  counter++;
+});
